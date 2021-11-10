@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_catalog/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -48,8 +49,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print(
-                        "This is great to watch me creating the app in Flutter");
+                    Navigator.pushNamed(context, MyRoutes.homeRoute);
                   },
                   child: Text("Login"),
                   style: ButtonStyle(
